@@ -3874,7 +3874,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "BAT54W D_Schottky"
 			(at 49.8475 54.61 0)
 			(effects
 				(font

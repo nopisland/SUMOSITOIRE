@@ -3,11 +3,8 @@
  			DUT : GEII.
  			Date : 14/10/2015 / 23h09.
   --------------------------------------------------------------*/
-#define IR_SMALLD_NEC
-#include <IRsmallDecoder.h>
+
 #define remote 2
-IRsmallDecoder irDecoder(remote); //IR receiver connected to pin 2 in this example
-irSmallD_t irData;
 
 
 //sharpe
@@ -413,9 +410,7 @@ void debug_Aquisition(void) {
   Serial.print(AV_D_debug_value); 
   Serial.println("==>ligne_AV_D"); 
 
-  int IR_DATA = irDecoder.dataAvailable(irData); 
-  Serial.print(IR_DATA); 
-  Serial.println("      IR_DATA_NEC");
+
 
   Serial.println("#############################");
   
@@ -461,7 +456,7 @@ void loop() {
  //debug_mouvement();
   mouvement(STOP);
   arret = 0 ;
-  while (digitalRead(button) ==  HIGH and irDecoder.dataAvailable(irData) == LOW); // attente de l'appui sur le bouton
+  while (digitalRead(button) ==  HIGH and pulseIn(remote,LOW)<5000); // attente de l'appui sur le bouton
   while (digitalRead(button) == LOW);  // attente du relachement du bouton
   digitalWrite(led_b, HIGH);
  // delay(4985);  //5 second d'attente

@@ -38,8 +38,8 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_55555551)
-			(plot_on_all_layers_selection 0x00000000_00000000_00000000_02000000)
+			(layerselection 0x00000000_00000000_55555555_57555550)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000008_00000202)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -71,7 +71,7 @@
 			(crossoutdnponfab no)
 			(subtractmaskfromsilk no)
 			(outputformat 4)
-			(mirror yes)
+			(mirror no)
 			(drillshape 1)
 			(scaleselection 1)
 			(outputdirectory "")
@@ -269,8 +269,8 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
-			(at 0 2.1 0)
+		(property "Value" "BAT54W D_Schottky"
+			(at 9.2 0.1 0)
 			(layer "F.Fab")
 			(uuid "c789e57d-54ab-4d19-9bd7-d7f69c55463f")
 			(effects
@@ -542,7 +542,7 @@
 		(descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U1"
-			(at 0 -3.4 90)
+			(at -0.015 0.015 180)
 			(layer "F.SilkS")
 			(uuid "d08d2f07-64ec-417c-a4d6-880dc9340097")
 			(effects
@@ -553,7 +553,7 @@
 			)
 		)
 		(property "Value" "ATtiny412-SS"
-			(at 0 3.4 90)
+			(at -9.265 1.705 90)
 			(layer "F.Fab")
 			(uuid "1eeecc21-e3db-4c0f-b15e-c5d1887e3ef6")
 			(effects
@@ -907,7 +907,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R3"
-			(at 0 -1.43 90)
+			(at 0.14 -0.04 90)
 			(layer "F.SilkS")
 			(uuid "07459f5b-9b5e-4695-8dd2-499b539aa799")
 			(effects
@@ -918,7 +918,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 0 1.43 90)
+			(at 2.13 0.04 90)
 			(layer "F.Fab")
 			(uuid "0ad984a1-1a17-4a90-98a8-ba2f251e7e15")
 			(effects
@@ -1106,7 +1106,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.43 90)
+			(at 0.075 -0.05 90)
 			(layer "F.SilkS")
 			(uuid "93e5cfb1-28db-4e73-900f-cdd739bde935")
 			(effects
@@ -1117,7 +1117,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 90)
+			(at 0.175 1.32 90)
 			(layer "F.Fab")
 			(uuid "5ca98e67-f42f-4adb-90d5-c53c113419fa")
 			(effects
@@ -1305,7 +1305,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 0 -1.43 0)
+			(at 0 0 0)
 			(layer "F.SilkS")
 			(uuid "83fabde2-9873-40a6-b225-c132151fc4ee")
 			(effects
@@ -1504,7 +1504,7 @@
 		(descr "SOT, 5 Pin (JEDEC MO-178 Var AA https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U3"
-			(at 0 -2.4 0)
+			(at 0 0.01 90)
 			(layer "F.SilkS")
 			(uuid "ae171480-48d1-4a94-afb6-162cbc8fb655")
 			(effects
@@ -1515,7 +1515,7 @@
 			)
 		)
 		(property "Value" "MCP1802x-xx02xOT"
-			(at 0 2.4 0)
+			(at -0.0875 9.3 90)
 			(layer "F.Fab")
 			(uuid "e881c5ec-96ed-4118-9846-1f532e25f778")
 			(effects
@@ -1849,7 +1849,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0.115 -1.83 90)
+			(at 0.035 -0.1 90)
 			(layer "F.SilkS")
 			(uuid "0a4041c1-1761-4f68-b93f-ebb7c00cf767")
 			(effects
@@ -1860,7 +1860,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 1.85 90)
+			(at 4.205 0.04 90)
 			(layer "F.Fab")
 			(uuid "2b5acea4-d93b-4597-baa6-1f27fa925eb3")
 			(effects
@@ -2048,7 +2048,7 @@
 		(descr "3-pin TSOT23 package, http://www.analog.com.tw/pdf/All_In_One.pdf")
 		(tags "TSOT-23")
 		(property "Reference" "Q1"
-			(at 0 -2.6 0)
+			(at -0.15 -0.11 90)
 			(layer "F.SilkS")
 			(uuid "7f5365af-f6b1-42c4-9225-f9033e2a5cd1")
 			(effects
@@ -2059,7 +2059,7 @@
 			)
 		)
 		(property "Value" "Q_PMOS_GSD"
-			(at 0 2.5 0)
+			(at 0 7.1 90)
 			(layer "F.Fab")
 			(uuid "ddc9762b-2aeb-4185-a244-ac0eb836e429")
 			(effects
@@ -2302,7 +2302,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -1.43 90)
+			(at 0.085 0.03 90)
 			(layer "F.SilkS")
 			(uuid "90898f86-757f-45d0-83a7-3bc5315a013e")
 			(effects
@@ -2313,7 +2313,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 90)
+			(at 2.855 -0.01 90)
 			(layer "F.Fab")
 			(uuid "227f92fa-0b50-43d0-937e-991e8d76a393")
 			(effects
@@ -2501,9 +2501,9 @@
 		(descr "Buzzer, D12.2mm height 6.5mm, https://product.tdk.com/info/en/catalog/datasheets/piezoelectronic_buzzer_ps_en.pdf")
 		(tags "buzzer")
 		(property "Reference" "BZ1"
-			(at 2.5 7.17 90)
+			(at 2.62 -2.82 180)
 			(layer "B.SilkS")
-			(uuid "a1711ebb-322e-409a-94a5-c5d6a83c1990")
+			(uuid "a934fd85-835a-4345-88fb-4fec5798b733")
 			(effects
 				(font
 					(size 1 1)
@@ -2515,7 +2515,7 @@
 		(property "Value" "Buzzer"
 			(at 2.5 -7.31 90)
 			(layer "B.Fab")
-			(uuid "83c60264-db73-4f6a-a028-59f4c12aa5c7")
+			(uuid "3f03088f-77d1-4d26-9459-65059185cb90")
 			(effects
 				(font
 					(size 1 1)
@@ -2529,7 +2529,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "d6d7b055-970a-4be8-9486-0bc21162fb55")
+			(uuid "c056ea52-d1f3-482b-a4b7-da295a1aa896")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,7 +2543,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "644b345f-8cb6-4591-af0f-223000f64f03")
+			(uuid "f6350a54-393f-40f9-89f5-27c617208b63")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +2676,7 @@
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D1"
-			(at 3.81 2.12 0)
+			(at 4.15 -0.04 0)
 			(layer "B.SilkS")
 			(uuid "b57408a1-c2c5-4e4d-9197-8094d5468060")
 			(effects
@@ -2688,7 +2688,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 3.86 -2.12 0)
+			(at 4.96 2.6 0)
 			(layer "B.Fab")
 			(uuid "ae82089a-6d30-4c55-a228-7fc32fb8ac4f")
 			(effects
@@ -2982,8 +2982,9 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 0 -5.31 0)
+			(at 0.16 -10.32 90)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "4989913d-536f-47ff-9525-11eadd29a164")
 			(effects
 				(font
