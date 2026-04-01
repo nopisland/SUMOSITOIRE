@@ -242,8 +242,8 @@ byte action ()
   switch (etat)
   {
     case 0:
-      digitalWrite(led_b, LOW);
-      digitalWrite(led_g, LOW);
+      
+     
       return (0);
 
     case AR: // Capteur Line Arriere Actif
@@ -456,11 +456,13 @@ void loop() {
  //debug_mouvement();
   mouvement(STOP);
   arret = 0 ;
-  while (digitalRead(button) ==  HIGH and pulseIn(remote,LOW)<5000); // attente de l'appui sur le bouton
+  while (pulseIn(remote,LOW)<5000){ //attente de recevoir une trame
+    //if(digitalRead(button) ==  LOW)break; // attente de l'appui sur le bouton
+  }
   while (digitalRead(button) == LOW);  // attente du relachement du bouton
   digitalWrite(led_b, HIGH);
  // delay(4985);  //5 second d'attente
-  digitalWrite(led_b, LOW);
+ 
   mouvement(MARCHE_ARRIERE);
   while (arret == 0)
   {
