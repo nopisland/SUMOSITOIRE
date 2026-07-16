@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Dam_libkicad") (type "KiCad") (uri "/home/faraday/Documents/lib_kicad_GEII/libkicad_Dam/Dam_libkicad.pretty") (options "") (descr ""))
+)
