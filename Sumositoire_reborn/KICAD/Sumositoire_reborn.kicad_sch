@@ -4035,17 +4035,6 @@
 		)
 		(uuid "31a13aba-1c11-43d7-95b6-16f6c4bcad57")
 	)
-	(text "est ce que je ne ferais pas un petit coup de modernisation :\n- petit DRV8835 en CMS au lieu du vieux module\n- connecteur grove pour les CNY (traversant ou CMS là est la question)\n	pour les CNY faudrait regarder les valeurs sur PhatBoy parce qu'ils ont un contraste de fou"
-		(exclude_from_sim no)
-		(at 92.964 169.672 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "348486c0-8498-481b-935f-9d6462ece8e5")
-	)
 	(text "LED\n"
 		(exclude_from_sim no)
 		(at 46.99 114.046 0)
@@ -4057,17 +4046,6 @@
 			)
 		)
 		(uuid "3689a212-2a4b-4cba-9998-911dc2811422")
-	)
-	(text "manque :\n- condo découplage\n- régulo\n- capteur télécommande\nBP\n"
-		(exclude_from_sim no)
-		(at 118.11 184.658 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3f20d3f0-828c-4958-8e14-92f8a1467631")
 	)
 	(text "Téléversement"
 		(exclude_from_sim no)
