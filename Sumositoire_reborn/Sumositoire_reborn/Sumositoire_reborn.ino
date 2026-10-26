@@ -12,8 +12,8 @@
 #define pin2 A4 //sharp gauche
 #define pin3 A7 //sharp droite
 int sueil_infra_arierre = 5;
-int sueil_infra_droite = 5;
-int sueil_infra_gauche = 5;
+int sueil_infra_droite = 25;
+int sueil_infra_gauche = 25;
 #define SHAR 16
 #define SHG 32
 #define SHD 64
@@ -36,7 +36,7 @@ int trig = 13;
 int echo = 12;
 long lecture_echo;
 long cm;
-int sueil_ultrason = 40;
+int sueil_ultrason = 50; //meusure en cm
 #define US 8
 
 
@@ -249,7 +249,7 @@ byte action ()
     case AR: // Capteur Line Arriere Actif
       digitalWrite(led_g, LOW);
       digitalWrite(led_b, HIGH);
-      mouvement(TOUT_DROIT);
+        (TOUT_DROIT);
       break;
 
     case (AVG|AVD): // Capteur Line Gauche et Droit Actif
@@ -282,7 +282,7 @@ byte action ()
       mouvement(TOUT_DROIT);
       break;
 
-    case US: // Capteur Ultrason
+    case US: // Capteur trason
       mouvement(TOUT_DROIT);
       break;
 
